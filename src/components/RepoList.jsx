@@ -3,7 +3,7 @@ import RepoCard from "./RepoCard";
 
 export default function RepoList({ repos }) {
     const [limit, setLimit] = useState(10);
-    const [sort, setSort] = useState("stars"); // stars | updated | name
+    const [sort, setSort] = useState("stars");
     const [q, setQ] = useState("");
 
     const filtered = useMemo(() => {
